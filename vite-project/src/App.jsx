@@ -9,7 +9,6 @@ export default function App () {
             passwordConfirm: '',
             joinedNews: false
         })
-    console.log(formData)
     
     function handleChange(event) {
         const {name, value, type, checked} = event.target
