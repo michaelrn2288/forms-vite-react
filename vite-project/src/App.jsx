@@ -23,7 +23,12 @@ export default function App () {
       event.preventDefault()
       const {password, passwordConfirm, joinedNews} = formData
 
-      console.log(password === passwordConfirm? 'Successfully signed up' : 'passwords do not match')
+      if (password === passwordConfirm) {
+        console.log('Successfully signed up')
+      } else {
+        console.log('passwords do not match')
+        return
+      }
       joinedNews? console.log('Thanks for signing up for our newsletter!') : ''
     }
 
